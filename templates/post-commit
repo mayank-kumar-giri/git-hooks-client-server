@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+message = "POST-COMMIT: Used for notification purposes, sending emails to notify about commit."
+lining = "\n" + ("-"*(len(message)+2)) + "\n"
+print(lining,message,lining)
