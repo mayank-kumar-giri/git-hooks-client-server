@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+import sys, os, re
+from subprocess import run
+
+run(["git", "remote", "update"])
+run(["git", "status", "-uno"])
+diff_output = str(run(["git", "status", "-uno"], capture_output=True).stdout).strip()
+
+if "behind" in diff_output:
+	message = "Your local branch is behind remote. Please take pull..."
+	lining = "\n" + ("-"*(len(message)+2)) + "\n"
+	print(lining,message,lining)
+
+	sys.exit(1)
+else:
+	sys.exit(0)

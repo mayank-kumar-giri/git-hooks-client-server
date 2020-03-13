@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import sys
+import fileinput
+
+print("PRE-RECEIVE: For making checks or enforcing policies on pushed data")
