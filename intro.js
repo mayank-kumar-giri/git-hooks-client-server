@@ -9,13 +9,3 @@ heaven
 heaven
 heaven
 heaven
-heaven
-heaven
-heaven
-heaven
-heaven
-heaven
-heaven
-heaven
-heaven
-heaven
